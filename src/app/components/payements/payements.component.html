@@ -1,0 +1,21 @@
+<header>
+    <div class="head">
+        <div class="left">
+            <h1>Your Cards</h1>
+            <button><span>New card</span><fa-icon [icon]='icon[0]'></fa-icon></button>
+        </div>
+        <div class="right">
+            <button><fa-icon [icon]='icon[1]'></fa-icon></button>
+        </div>
+    </div>
+</header>
+<section class="card_payments">
+    <div class="card_content" @listAnimationXX>
+        <div class="image" *ngFor = 'let image of images'>
+            <img src="assets/image/{{image}}" alt="carte visa image">
+        </div>
+    </div>
+    <div class="btn_next">
+        <button (click)='slide()'><fa-icon [icon]='icon[2]'></fa-icon></button>
+    </div>
+</section>

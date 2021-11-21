@@ -1,0 +1,34 @@
+<div class="core-left">
+<div class="credit">
+    <div class="credit-contents">
+        <div class="cols-right" *ngFor = "let title of titles">
+            <div class="round"><span></span></div>
+            <div class="credit-content">
+                <h6>{{title}}</h6>
+                <span *ngIf="title === 'Credit limity'" class="bold">{{creditUsed}}<span>/{{credit}} USD</span></span>
+                <span *ngIf="title === 'Online limity'" class="bold">{{creditonlineUsed}}<span>/{{creditUsed}} USD</span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="payement">
+    <div class="payments-head">
+        <h4>Int.Payments</h4>
+        <p>the last {{dateTime}} days</p>
+    </div>
+    <div class="payments-main">
+        <div class="payments-card" *ngFor = "let i of range ">
+            <div class="card-pay"><p>{{status['count'][i]}}</p><span *ngIf="status['count'][i] == 5">!</span></div>
+            <p>{{status['pay'][i]}}</p>
+        </div>
+    </div>
+</div>
+<div class="transaction">
+    <div class="transaction-main">
+        <div class="transaction-card" *ngFor = "let link of links">
+            <a href="#">{{link}}</a>
+            <p>131441<span>USD</span></p>
+        </div>
+    </div>
+</div>
+</div>

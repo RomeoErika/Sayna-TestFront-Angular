@@ -1,0 +1,19 @@
+<div class="recent-activity">
+    <div class="recent-actiity-top">
+        <h2>Recent Activities</h2>
+        <button><span>view a report</span></button>
+    </div>
+    <div class="recent-content" >
+        <h4>Today</h4>
+        <div *ngFor = "let i of range">
+          
+            <p> <fa-icon [icon]='icon[0]'></fa-icon>To {{User["name"][i]}}<br> <span>Sent</span></p>
+            <p>-{{User["transaction"][i]}}<span class="bold">USD</span></p>
+        </div>
+        <div>
+            <p>EUR to USD<br><span>conversion</span></p>
+            <p>+1,456.00<span class="bold">USD</span></p>
+        </div>
+    </div>
+    <div class="send"><fa-icon [icon]='icon[1]'></fa-icon></div>
+</div>

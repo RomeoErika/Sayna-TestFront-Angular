@@ -1,0 +1,58 @@
+.recent-activity{
+    padding:0px 3pc;
+    width: 100%;
+    .recent-actiity-top{
+        margin: 50px 0px 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-family: "PTSans-bold";
+        }
+        button{
+            border: 0px;
+            border-radius: 4px;
+            padding: 4%;
+            background-color: rgba(169, 169, 169, 0.288);
+            span{
+                font-weight: 10;
+                opacity: 0.4;
+            }
+        }
+    }
+    .recent-content{
+        
+        h4{
+            font-family: "PTSans-bold";
+            font-size: 16px;
+            opacity: 0.3;
+            margin:  10px 0px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .bold{
+                opacity: 1;
+                font-weight: 400;
+            }
+            p span{
+                opacity: 0.3;
+            }
+           
+        }
+    }
+    .send{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 4px;
+        left: 80%;
+        background-color: royalblue;
+        width: 50px;
+        height: 50px;
+        border-radius: 0px 15px 15px 15px;
+        color: #fff;
+    }
+}

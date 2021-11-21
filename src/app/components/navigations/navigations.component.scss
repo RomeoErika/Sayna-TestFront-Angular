@@ -1,0 +1,68 @@
+.navigation{
+    background-color: #ffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: #373e7e;
+    box-shadow:  -1em 0em 5em rgba(0, 0, 0, 0.3); 
+    width: 200px;
+    height: 100%;
+    .title{
+        display: flex;
+        align-items: center;
+        margin-left:10px;
+        h1{
+            font-size: 30px;
+            font-family: "PTSans-bold",sans-serif;
+            margin: 10px;
+        }
+    }
+    .menu div,.fotter div{
+        display: flex;
+        justify-content: center;
+        
+        button{
+            
+            width: 80%;
+            height: 40px;
+            margin-top: 10px;
+            background: none;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            border: none;
+            padding-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 100ms;
+            fa-icon{
+                font-size: 20px;
+                margin: 0px 5px;
+            }
+            &:hover{
+                color: #373e7e;
+                font-size:15px;
+                font-weight: 900;
+                background-color: rgba(65, 193, 197, 0.226);
+            }
+        }
+        .active{
+            color: #373e7e;
+            font-size:15px;
+            font-weight: 900;
+            background-color: rgba(65, 193, 197, 0.226);
+        }
+    }
+    .fotter{
+        margin-top: 8pc;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 2pc;
+    }
+    a{
+        text-decoration: none;
+        color:#909297;;
+    }
+    
+}

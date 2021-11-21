@@ -1,0 +1,16 @@
+<nav class="navigation">
+    <div class="title" >
+        <h1 @fadeIn>{{title}}</h1>
+    </div>
+    <div class="menu" [@listAnimation]='menus.length'>
+        <div class="home" *ngFor = "let menu of menus let i = index">
+            <button ><a routerLink="/"><fa-icon [icon]='icon[i]'></fa-icon><span>{{menu}}</span></a></button>    
+            
+        </div>
+    </div>
+    <div class="fotter" @listAnimation>
+        <div class="Repost" *ngFor = "let menu of menusfotter let i = index">
+            <button ><a routerLink='/'><span><fa-icon [icon]='iconfotter[i]'></fa-icon>{{menu}}</span></a></button>
+        </div>
+    </div>
+</nav>

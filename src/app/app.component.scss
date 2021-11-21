@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    background-color: #fcfdff;
+    router-outlet{
+        width: 100%;
+        margin-left: 230px;
+    }
+
+}

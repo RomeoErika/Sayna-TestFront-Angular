@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+	font-family: "PTSans";
+	src: url("assets/font/PTSans-Regular.ttf");
+}
+@font-face{
+	font-family: "PTSans-bold";
+	src: url("assets/font/PTSans-Bold.ttf");
+}
+@font-face{
+	font-family: "eurostile";
+	src: url("assets/font/MochiyPop.ttf");
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+	font-family: "PTSans",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
